@@ -56,7 +56,7 @@ const businessTypes = [
 const Register = () => {
   return (
     <PageContainer>
-      <h1>Als Geschäft registieren</h1>
+      <h1>Als Geschäft registrieren</h1>
       <Form>
         <Row>
           <Field>
