@@ -18,7 +18,7 @@ const Dashboard = () => {
       <AppBar>
         <Toolbar>
           <MobileHidden>
-            <Typography variant="h6">dgE for Business</Typography>
+            <Typography variant="h6">dg€ for Business</Typography>
           </MobileHidden>
           <FillSpaceMobileHidden />
           <Typography variant="h6">20 dgE</Typography>
