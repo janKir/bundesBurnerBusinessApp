@@ -1,29 +1,24 @@
 import React from "react";
-import { Box, Button } from "@material-ui/core";
 import logo from "../assets/dgE_v4.png";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import PageContainer from "./page-container";
+import ActionButton from "./action-button";
 
 const Welcome = () => {
   return (
-    <Container>
+    <PageContainer>
       <h1>Willkommen</h1>
       <p>dgE (sprich: diggi) - App für Geschäfte</p>
       <Logo src={logo} alt="dgE Logo" />
       <p>
-        <Button component={Link} to="/register">
+        <ActionButton component={Link} to="/register">
           Jetzt registrieren
-        </Button>
+        </ActionButton>
       </p>
-    </Container>
+    </PageContainer>
   );
 };
-
-const Container = styled(Box)`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
 
 const Logo = styled.img`
   width: 400px;
