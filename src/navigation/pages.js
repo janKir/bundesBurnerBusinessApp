@@ -1,6 +1,7 @@
 import Welcome from "../components/welcome";
 import Register from "../components/register";
 import Dashboard from "../components/dashboard";
+import Receive from "../components/receive";
 
 const pages = [
   {
@@ -12,6 +13,11 @@ const pages = [
     path: "/dashboard",
     title: "Dashboard",
     component: Dashboard
+  },
+  {
+    path: "/receive",
+    title: "Empfangen",
+    component: Receive
   },
   {
     path: "/",
