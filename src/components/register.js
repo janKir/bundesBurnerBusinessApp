@@ -84,13 +84,13 @@ const Register = () => {
           </Field>
         </Row>
         <Row>
-          <Field>
+          <StreetField>
             <TextField
               id="business-street"
-              label="Straße und Hausnummer"
+              label="Straße & Hausnr."
               fullWidth
             />
-          </Field>
+          </StreetField>
           <Field>
             <TextField id="business-postal" label="Postleitzahl" fullWidth />
           </Field>
@@ -122,6 +122,7 @@ const Form = styled.form`
 const Row = styled.div`
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 15px -10px;
 `;
@@ -129,6 +130,13 @@ const Row = styled.div`
 const Field = styled(FormControl)`
   flex-grow: 1;
   margin: 0 10px;
+`;
+
+const StreetField = styled(Field)`
+  width: 100%;
+  @media (min-width: 750px) {
+    width: inherit;
+  }
 `;
 
 export default Register;

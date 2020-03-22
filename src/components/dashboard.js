@@ -17,8 +17,10 @@ const Dashboard = () => {
     <PageContainer>
       <AppBar>
         <Toolbar>
-          <Typography variant="h6">dgE for Business</Typography>
-          <FillSpace />
+          <MobileHidden>
+            <Typography variant="h6">dgE for Business</Typography>
+          </MobileHidden>
+          <FillSpaceMobileHidden />
           <Typography variant="h6">20 dgE</Typography>
 
           <FillSpace />
@@ -44,8 +46,23 @@ const Dashboard = () => {
   );
 };
 
+const MobileHidden = styled.div`
+  display: none;
+  @media (min-width: 750px) {
+    display: block;
+  }
+`;
+
 const FillSpace = styled.div`
   flex-grow: 1;
+`;
+
+const FillSpaceMobileHidden = styled.div`
+  flex-grow: 1;
+  display: none;
+  @media (min-width: 750px) {
+    display: block;
+  }
 `;
 
 const Logo = styled.img`
