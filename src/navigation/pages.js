@@ -3,14 +3,14 @@ import Register from "../components/register";
 
 const pages = [
   {
-    path: "/",
-    title: "Welcome",
-    component: Welcome
-  },
-  {
     path: "/register",
     title: "Registrieren",
     component: Register
+  },
+  {
+    path: "/",
+    title: "Welcome",
+    component: Welcome
   }
 ];
 
