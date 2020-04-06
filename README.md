@@ -1,3 +1,10 @@
+# BundesBurnerBusiness Web app
+
+[![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/dgE-krisengeld/community)
+
+This is a Proof-of-Concept App for the WirVSVirus hackthon. 
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
